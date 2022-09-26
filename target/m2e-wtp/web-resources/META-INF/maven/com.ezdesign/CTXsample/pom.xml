@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ezdesign</groupId>
+  <artifactId>CTXsample</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  <name>ComtextSample</name>
+  <description>Sample for Context Test</description>
+  <build>
+  	<plugins>
+  	<plugin>
+  		<groupId>org.apache.maven.plugins</groupId>
+  		<artifactId>maven-compiler-plugin</artifactId>
+  		<configuration>
+  		<source>11</source>
+  		<source>11</source>
+  		</configuration>
+  	</plugin>
+  	<plugin>
+  	<groupId>org.apache.maven.plugins</groupId>
+  	<artifactId>maven-war-plugin</artifactId>
+  	<version>3.3.1</version>
+  	</plugin>
+  	</plugins>
+  </build>
+  <dependencies>
+  <dependency>
+  <groupId>org.ow2.asm</groupId>
+  <artifactId>asm</artifactId>
+  <version>9.1</version>
+  </dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-jdbc</artifactId>
+  		<version>5.2.6.RELEASE</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-context</artifactId>
+  		<version>5.2.6.RELEASE</version>
+  	</dependency>
+  	<dependency>
+    <groupId>javax.annotation</groupId>
+    <artifactId>javax.annotation-api</artifactId>
+    <version>1.3.2</version>
+</dependency>
+  </dependencies>
+</project>
